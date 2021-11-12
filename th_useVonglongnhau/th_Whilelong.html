@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script language="javascript">
+  let data, i, j;
+  data = "<table border='1' width='300' cellspacing='0' cellpadding='3'>";
+  i = j = 1;
+  while (i <= 10) {
+    data += "<tr>";
+    while (j <= 10) {
+      data += "<td>" + i * j + "</td>";
+      j++;
+    }
+    data +=  "</tr>";
+    j = 1;
+    i++;
+  }
+  data = data + "</table>";
+  document.write(data);
+</script>
+</body>
+</html>
