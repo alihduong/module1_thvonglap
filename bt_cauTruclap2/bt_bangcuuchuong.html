@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    table, tr, td {
+        border: 1px solid;
+        border-collapse: collapse;
+        width: 1000px;
+        text-align: center;
+    }
+
+    td {
+        width: 90px;
+    }
+</style>
+<body>
+<p id="display"></p>
+<script>
+    let data = "<table>"
+    for (let i = 1; i < 11 ; i++) {
+        data += "<tr>";
+        for (let j = 1; j < 11 ; j++) {
+            data += ("<td>" + i + " x " + j + " = " + (i*j) +"</td>")
+        }
+        data += "</tr>"
+    }
+    data += "</table>"
+    console.log(data)
+    document.getElementById("display").innerHTML = data;
+</script>
+</body>
+</html>
